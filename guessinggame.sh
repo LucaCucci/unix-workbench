@@ -2,19 +2,10 @@
 # File guessingame.sh
 
 condition=1
+count=$(ls | wc -l)
 
 function file_counter {
-	echo $(find ./ -type f | wc -l) 
-}
-
-echo "Welcome to guess file number in a directory game."
-
-while [[ $condition -eq 1 ]]
-do
-	echo "Please insert a number:"
-	read file_number
 	if [[ $file_number =~ ^[0-9]+$ ]] ; then
-		count=$(file_counter)
 		if [[ $file_number -gt $count ]] ; then
 			echo "Too high. Try again..."
 		elif [[ $file_number -lt $count ]] ; then
@@ -26,4 +17,13 @@ do
 	else 
 		echo "Is not a number. Try again..."
 	fi
+}
+
+echo "Welcome to guess file number in a directory game."
+
+while [[ $condition -eq 1 ]]
+do
+	echo "Please insert a number:"
+	read file_number
+	file_counter
 done

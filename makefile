@@ -8,7 +8,7 @@ create_readme.md:
 	echo "Execution time is: `date +%c`" >> README.md
 	echo "" >> README.md
 	echo "### Script lines number" >> README.md
-	echo "Number of lines in script are `wc -l guessingame.sh | egrep -o "[0-9]+"`" >> README.md
+	echo "Number of lines in script are `wc -l guessinggame.sh | egrep -o "[0-9]+"`" >> README.md
 
 clean:
 	rm README.md
