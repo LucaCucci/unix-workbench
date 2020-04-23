@@ -1,7 +1,7 @@
 # Unix Workbench
 
 ### Makefile execution time
-Execution time is: gio 23 apr 2020 17:09:48 CEST
+Execution time is: gio 23 apr 2020 17:12:57 CEST
 
-### Script line numbers
+### Script lines number
 Number of lines in script are 29
