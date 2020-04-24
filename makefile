@@ -5,7 +5,7 @@ create_readme.md:
 	echo "# Unix Workbench" > README.md
 	echo "" >> README.md
 	echo "### Makefile execution time" >> README.md
-	echo "Execution time is: `date +%c`" >> README.md
+	echo "Execution time is: `date`" >> README.md
 	echo "" >> README.md
 	echo "### Script lines number" >> README.md
 	echo "Number of lines in script are `wc -l guessinggame.sh | egrep -o "[0-9]+"`" >> README.md
