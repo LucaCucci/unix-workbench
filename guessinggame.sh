@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
-# File guessingame.sh
 
 condition=1
-count=$(ls | wc -l)
+count=$(find . -maxdepth 1 -type f | wc -l)
 
 function file_counter {
 	if [[ $file_number =~ ^[0-9]+$ ]] ; then
@@ -19,7 +18,7 @@ function file_counter {
 	fi
 }
 
-echo "Welcome to guess file number in a directory game."
+echo "Welcome to guessinggame. Guess the number of files in the current directory."
 
 while [[ $condition -eq 1 ]]
 do
